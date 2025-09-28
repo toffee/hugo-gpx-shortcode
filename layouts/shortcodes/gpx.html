@@ -1,11 +1,11 @@
 {{/* TODO: allow multiple maps to be displayed on the same page */}}
 
-<link rel="stylesheet" href="{{ site.Params.gpx.leafletCSS | default ("/gpx-shortcode/leaflet/leaflet.css" | relURL) }}" crossorigin="" />
-<link rel="stylesheet" href="{{ "/gpx-shortcode/style.css" | relURL }}" />
-<link rel="stylesheet" href="{{ "/gpx-shortcode/leaflet-distance-marker.css" | relURL }}" />
-<script src="{{ "/gpx-shortcode/leaflet/leaflet.js" | relURL }}"></script>
-<script src="{{ "/gpx-shortcode/leaflet.geometryutil.js" | relURL }}"></script>
-<script src="{{ "/gpx-shortcode/leaflet-distance-marker.js" | relURL }}"></script>
+<link rel="stylesheet" href="{{ site.Params.gpx.leafletCSS | default ("gpx-shortcode/leaflet/leaflet.css" | relURL) }}" crossorigin="" />
+<link rel="stylesheet" href="{{ "gpx-shortcode/style.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "gpx-shortcode/leaflet-distance-marker.css" | relURL }}" />
+<script src="{{ "gpx-shortcode/leaflet/leaflet.js" | relURL }}"></script>
+<script src="{{ "gpx-shortcode/leaflet.geometryutil.js" | relURL }}"></script>
+<script src="{{ "gpx-shortcode/leaflet-distance-marker.js" | relURL }}"></script>
 <script src="{{ site.Params.gpx.leafletGpxJS | default "https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js" }}"></script>
 
 {{/* HTML scaffolding. Content will be loaded in the JS below */}}
