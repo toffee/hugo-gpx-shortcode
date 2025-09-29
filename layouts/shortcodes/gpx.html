@@ -90,9 +90,9 @@
       },
       async: true,
       marker_options: {
-        startIconUrl: "/gpx-shortcode/pin-icon-start.png",
-        endIconUrl: "/gpx-shortcode/pin-icon-end.png",
-        shadowUrl: "/gpx-shortcode/pin-shadow.png",
+        startIconUrl: "{{ gpx-shortcode/pin-icon-start.png | relURL }}",
+        endIconUrl: "{{ gpx-shortcode/pin-icon-end.png | relURL }}",
+        shadowUrl: "{{ gpx-shortcode/pin-shadow.png | relURL }}",
       },
       // looping through all specified colours
       polyline_options: {color: colors[index % colors.length], distanceMarkers: true, smoothFactor: 0.5 }
